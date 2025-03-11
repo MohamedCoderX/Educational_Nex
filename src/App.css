@@ -1,7 +1,113 @@
 @import "tailwindcss";
-body{
-    font-family: "Just Another Hand", cursive;
-    font-family: "Urbanist", sans-serif;
-  font-weight: 400;
-  font-style: normal;
+
+:root {
+    --handwriting-font: "Just Another Hand", cursive;
+    --primary-font: "Urbanist", sans-serif;
+}
+.rin {
+    position: relative;
+}
+
+.rin::before {
+    content: "";
+    background: #ef991f;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 1;
+    mix-blend-mode: multiply;
+    border-radius: 50%; /* Ensure it remains circular */
+    z-index: 8; /* Keeps it above the background but below the image */
+}
+.but::before{
+    content: "";
+    background: rgb(255, 208, 0);
+    width: 0%;
+    position: absolute;
+    height: 100%;
+    top: 0;
+    left: 0;
+    
+    transition: width 0.5s ease-in-out;
+border-radius: 32px;
+
+}
+.but::after{
+    content: "Find out more";
+    position: absolute;
+    top: 14.5px;
+    font-size: 17px;
+    left: -150px;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: left 0.3s ease-in-out;
+}
+.but{
+    transition: color 0.3s ease-in-out;
+    overflow: hidden;
+    color: white;
+}
+.but:hover::before{
+    width: 100%;
+    
+}
+.but:hover{
+    color: black;
+}
+.but:hover::after{
+    left: 0;
+}
+.stu::before{
+    content: "*";
+    color: green; 
+    font-size: 30px;
+    margin-right: 10px;
+    text-align: center;
+
+
+}
+.buts::after{
+    content: "";
+    background: green;
+    width: 2px;
+     height:40%;
+     top: 15px;
+     right: -10px;
+     position: absolute;
+
+}
+.buts{
+    cursor: pointer;
+}
+
+.swiper-container {
+    height: auto !important;
+    overflow: hidden;
+  }
+  .crim {
+    width: 100%;
+    object-fit: cover;
+    transition: transform 500ms ease-out;
+    transform-origin: center center;
+}
+
+.crim:hover {
+    transform: scale(1.2); /* Zoom in */
+}
+.on::after{
+    content: "";
+    background: url('../src/assets/onl.webp');
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-repeat: no-repeat;
+    top: 50px;
+    right: 20px;
+}
+.on{
+    position: relative;
 }

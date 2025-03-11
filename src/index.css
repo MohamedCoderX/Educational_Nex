@@ -1,1 +1,24 @@
 @import "tailwindcss";
+
+:root {
+    --handwriting: "Just Another Hand", cursive;
+    --primary: "Urbanist", sans-serif;
+}
+
+html, body {
+    height: 100%;
+
+    scroll-behavior: smooth;
+  }
+  .swiper-container {
+    height: auto !important;
+    overflow: hidden;
+  }
+  .crim {
+    transition: transform 500ms ease-in-out;
+    transform-origin: center;
+}
+
+.crim:hover {
+    transform: perspective(500px) rotateX(10deg) rotateY(10deg) scale(1.1);
+}
