@@ -115,3 +115,9 @@ border-radius: 32px;
 .bge{
     border-radius: 158px 0 0 158px;
 }
+.testt{
+    background-image: url("../src/assets/green.webp");
+}
+.imgimg{
+    clip-path: polygon(100% 0, 100% 38%, 100% 100%, 11% 100%, 0 0);
+}

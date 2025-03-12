@@ -4,6 +4,7 @@ import Header from './Components/Header'
 import  Carousel  from './Components/Carousel'
 import Online from './Components/Online'
 import Know from './Components/Know'
+import Testimonial from './Components/Testimonial'
 
 const App = () => {
   return (
@@ -13,6 +14,7 @@ const App = () => {
       <Online/>
     <Carousel/>
     <Know/>
+    <Testimonial/>
     </div>
   )
 }
