@@ -111,3 +111,7 @@ border-radius: 32px;
 .on{
     position: relative;
 }
+
+.bge{
+    border-radius: 158px 0 0 158px;
+}

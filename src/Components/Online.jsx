@@ -24,7 +24,7 @@ const categories = [
 ];
 
 const Online = () => {
-  const swiperRef = useRef(null);
+ 
   const sectionRef = useRef(null);
 
   useEffect(() => {
