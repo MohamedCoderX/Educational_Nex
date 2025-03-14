@@ -28,7 +28,7 @@ const testimonials = [
 
 const Testimonial = () => {
   return (
-    <section className="testt px-5 md:px-16 pt-20 pb-30 relative mt-10" style={{ fontFamily: "var(--primary)" }}>
+    <section className="testt px-5 md:px-16 pt-20 pb-30 relative " style={{ fontFamily: "var(--primary)" }}>
       <div className=" mx-auto flex  flex-wrap justify-around items-center">
         
         {/* Left Side Content */}

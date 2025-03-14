@@ -121,3 +121,9 @@ border-radius: 32px;
 .imgimg{
     clip-path: polygon(100% 0, 100% 38%, 100% 100%, 11% 100%, 0 0);
 }
+.fot{
+    background: url("../src/assets/footer-bg.webp");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
